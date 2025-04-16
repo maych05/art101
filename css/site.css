@@ -34,3 +34,7 @@ h1 {
   border: dotted 5px #e6e5e5;
   background-color: #abd6b0;
 }
+
+#portrait {
+  width: 200px;
+}
