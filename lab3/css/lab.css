@@ -5,11 +5,20 @@
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #888;
-    background-color: #DDD8C4;
+    background-color: #fefefe;
   }
 
   .results {
 
     width: 100%;
 
+  }
+  #content {
+    background-color:#acacac;
+    width: 95%;
+    min-height:300px;
+    padding:10px;
+    margin:10px;
+    border:dotted 4px #000000;
+    font-size:20px;
   }
