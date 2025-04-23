@@ -10,9 +10,13 @@ p{
   font-size: 18px;
   letter-spacing: 1px;
   word-spacing: 1px;
-  text-align: center;
+  color: rgb(62, 43, 38);
 }
 
 .myportrait{
   width:500px
+}
+
+.minor-section{
+  align-items: center;
 }
