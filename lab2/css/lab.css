@@ -4,13 +4,13 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #edeae6;
+    border: dotted 5px #a37667;
+    background-color: #f0cbcb;
   }
 
   h1 {
-      color:blanchedalmond;
-      font-size: 400%;
+      color: #2b432c;
+      font-size: 350%;
   }
 
   p {
@@ -20,11 +20,11 @@
   }
 
   #content {
-    background-color:#ffc8c3;
+    background-color:#afb797;
     width: 95%;
     min-height:300px;
     padding:10px;
     margin:10px;
-    border:dotted 4px #888;
+    border:solid 5px #708d47;
     font-size:20px;
   }

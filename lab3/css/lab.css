@@ -4,21 +4,28 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #fefefe;
+    border: dotted 5px #a37667;
+    text-align: center;
+  background-color: #f0cbcb;
   }
 
   .results {
-
     width: 100%;
 
   }
   #content {
-    background-color:#acacac;
+    background-color:#afb797;
     width: 95%;
     min-height:300px;
     padding:10px;
     margin:10px;
-    border:dotted 4px #000000;
+    border:solid 5px #708d47;
     font-size:20px;
   }
+
+  #major-section{
+    text-align: center;
+    margin-bottom: 10px;
+    border: dotted 5 px #a37667; 
+  }
+
