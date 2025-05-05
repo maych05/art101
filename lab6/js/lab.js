@@ -21,23 +21,3 @@ document.writeln("Kinds of transportation I use: ", myTransport, "</br>");
 
 document.writeln("My Main Ride: <pre>" ,
   JSON.stringify(myMainRide, null, '\t') , "</pre>") ;
-
-//Section Time
-
-window.prompt("Please say something");
-
-let textPiece="let's do something";
-
-function theElephant (someFood){
-
-  let userSortedText=userText.split("").sort().join("");
-
-  return userSortedText;
-
-}
-
-let userText=window.prompt ("let's do something");
-
-let finalText = theElephant(userText);
-
-document.writeIn(finalText); 
