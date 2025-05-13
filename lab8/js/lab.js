@@ -2,6 +2,7 @@
 //author: May Cho
 //date: May 8, 2025
 
+//initial function
 function isOdd(x){
   return(x % 3 == 0);
 }
