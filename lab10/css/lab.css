@@ -13,12 +13,25 @@
     text-align: center;
 }
 
-.special {
+.btn-warning {
   background-color: #f0cbcb;
   border: dotted 1px ;
   color: #a37667;
   font-weight: bold;
 }
+
+.text p {
+  display: inline-block;
+  max-width: 60%;
+  margin: 3px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: darkgray;
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.8em;
+}
+
 
 
 
