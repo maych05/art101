@@ -1,48 +1,25 @@
-$(document).ready(function(){
-  console.log("Doc Loaded")
-
-//get input from html
-
-function getFactorObj() {
-  var factorObj = {};
-  for (var factor=0; factor<maxFactors; factor++){
-    numId= "num" + factor;
-    textId= "text" + factor;
-    numValue = document.getElementById(numId).value;
-    textValue = document.getElementById(textId).value;
-    console.log(factor + ") num:", numValue, "text:", textValue)
-    //if either value is blank, don't use it
-    if (numValue && textValue){
-        factorObj[numValue]= textValue;
-    }
+// Use a for loop to print all the numbers from 1 to 100. Test and debug.
+for (let i = 1; i <= 100; i++) {
+  // For numbers which are multiples of both 3 and 5, print “FizzBuzz” instead.
+  if(i % 15 == 0) {
+    console.log("FizzBuzz!");
+    $("#output").append("FizzBuzz!");
+    
   }
-  return factorObj;
-}
-
-//fizzbuzz function
-
-function fizzBuzzBoom(maxNums, factorObj){
-  //iterate over all numbers 
-  for (var num=0, num<maxNums; num++){
-    debugger;
-    //reset output string
-    var outputStr= "";
-    //iterate over the factors from user input 
-    for(var factor in factorObj){
-      //check to see if num is a multiple of factor 
-      if (num % factor ==0){
-      }
-    }
-    // words in outputStr, format it like "-FizzBuzz!"
-    if (outputStr){
-      outputStr="-" + outputStr + "!";
-    }
-    outputToPage(num.toString()+ outputStr)
-    //compile one long string as you output numbers
-    oneLongString += num + "Fizz! <br>";
+  // Add an if statement: if the number is a multiple of 3, print “Fizz” instead of the number.
+  else if (i % 3 == 0) {
+    console.log("Fizz!");
+    $("#output").append("Fizz!");
+  }
+  // Add an else if condition: If the number is a multiple of 5, print “Buzz” instead of the number.
+  else if(i % 5 == 0) {
+    console.log("Buzz!");
+    $("#output").append("bbbb!");
+    
   }
 
-  //append to output div
-
-  $("#output").append(oneLongString);
-}
+  else {
+    console.log(i);
+    $("#output").append(i);
+    }
+  }

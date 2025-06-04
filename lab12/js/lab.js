@@ -7,30 +7,26 @@ function getHouse(num){
   if(remainer==0){
     answer="House of Elrond: Known for wisdom, leadership, and the sanctuary of Rivendell.";
   }
-  return remainer;
-  }
+
   if(remainer==1){
     answer="House of Durin: A lineage of strength, endurance, and the heart of Dwarven lore.";
-  }
-  return remainer;{
   }
 
   if(remainer==2){
     answer="House of Beren: Celebrated for courage, perseverance, and unyielding love for Luthien.";
   }
-  return remainer;{
-  }
+
 
   if(remainer==3){
     answer="House of Feanor: A house of ambition, brilliance, and the creator of the Simarils.";
   }
-  return str;
+  return answer;
 }
 
 
 
 //attach click handler to submit button
-$("#button").clickFunction(){
+$("#submit").click(function(){
   //get the value in the #input text box, assign to a variable name
   let name=$("#input").val()
   console.log(name);
@@ -42,4 +38,5 @@ $("#button").clickFunction(){
   console.log(house);
   //add hosue to output div
   $("#output").html("<h1>"+house+"</h1>");
-}
+});
+

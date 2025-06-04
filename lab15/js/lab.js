@@ -1,48 +1,29 @@
-$(document).ready(function(){
-  console.log("Doc Loaded")
+//index.js - Lab 15
+//Author: May Cho
+//Date: 6/2/2025
 
-//get input from html
+const ajaxObj ={
+  url: "http://www.yerkee.com/api/fortune",
+  type: "GET",
+  dataType: "json"
+};
 
-function getFactorObj() {
-  var factorObj = {};
-  for (var factor=0; factor<maxFactors; factor++){
-    numId= "num" + factor;
-    textId= "text" + factor;
-    numValue = document.getElementById(numId).value;
-    textValue = document.getElementById(textId).value;
-    console.log(factor + ") num:", numValue, "text:", textValue)
-    //if either value is blank, don't use it
-    if (numValue && textValue){
-        factorObj[numValue]= textValue;
-    }
-  }
-  return factorObj;
-}
+$("#activate").click(function(){
+  console.log("Button is clicked");
+  
+  $.ajax(ajaxObj)
+  .done(function(data){
+    console.log("success!");
+    console.log(data);
 
-//fizzbuzz function
+  let answer = data.answer;
+  let imageURL = data.image;
+  let imageHTML= "<img src='" + imageURL + "'>";
+  $("#output").html("<h1>"+ answer +"</h1>");
+  $("#output").append(imageHTML);
+  })
 
-function fizzBuzzBoom(maxNums, factorObj){
-  //iterate over all numbers 
-  for (var num=0, num<maxNums; num++){
-    debugger;
-    //reset output string
-    var outputStr= "";
-    //iterate over the factors from user input 
-    for(var factor in factorObj){
-      //check to see if num is a multiple of factor 
-      if (num % factor ==0){
-      }
-    }
-    // words in outputStr, format it like "-FizzBuzz!"
-    if (outputStr){
-      outputStr="-" + outputStr + "!";
-    }
-    outputToPage(num.toString()+ outputStr)
-    //compile one long string as you output numbers
-    oneLongString += num + "Fizz! <br>";
-  }
-
-  //append to output div
-
-  $("#output").append(oneLongString);
-}
+  .fail(function(xhr, status, errorThrown){
+      console.log(errorThrown + "Status:" + status);
+  });
+})
